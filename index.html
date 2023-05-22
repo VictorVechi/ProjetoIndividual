@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importação da estilização desktop e mobile -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- Importação da fonte utilizada do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+    <title>Victor Henrique Vechi</title>
+</head>
+
+<body>
+    <!-- Defino o header para poder ter um cabeçalho com links de navegação na página-->
+    <header>
+        <nav>
+            <h1><a href="https://www.instagram.com/victorh_vechi/" class="titulo">Victor Vechi</a></h1>
+            <!-- Agrupo os links em uma div para ter mais controle do tamanho dos itens no css -->
+            <div>
+                <a href="#resumo" class="item-navegacao">Quem sou</a>
+                <a href="#hobbies" class="item-navegacao">Interesses</a>
+                <a href="#forms" class="item-navegacao">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Defino o conteúdo principal da página -->
+    <main>
+
+        <!-- Divido as seções que a página irá conte, e defino os ids para poder usar como link no cabeçalho -->
+        <section class="resumo" id="resumo">
+            <img src="img/victor.JPG" alt="Uma fotografia do Victor em um fundo azul" />
+            <p class="texto-resumo">Eu me chamo Victor Henrique Vechi, tenho 19 anos. Nasci e fui criado na cidade de
+                Pinhais, região metropolitana de Curitiba. Sou formado como Técnico em Informática pelo IFPR - Pinhais.
+                Atualmente faço graduação em Ciência da Computação também no IFPR - Pinhais</p>
+        </section>
+        <section class="hobbies" id="hobbies">
+            <img src="img/trilha.jpg"
+                alt="Fotografia de uma placa na mata escrita: Não deixe nada além de pegadas. Não tire nada além de fotos. Não leve nada além de saudades " />
+            <p>Desde a infância gostei muito de jogos eletrônicos e de computadores, o que foi um grande incentivo para
+                entrar na área de desenvolvimento. Mas não só de tecnologia vive o desenvolvedor, por isso um dos meus
+                hobbies favoritos é o trekking e acampamento que permite um contato maior com o mundo em que vivemos</p>
+        </section>
+        <section class="formulario-contato" id="forms">
+            <form>
+                <div class="campos">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" />
+                </div>
+                <div class="campos">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" />
+                </div>
+                <div class="campos">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" />
+                </div>
+                <div class="campos">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" />
+                </div>
+                <input type="submit" value="Enviar" class="botao">
+            </form>
+        </section>
+    </main>
+    <!-- Defino meu rodapé com um link para minha rede social de contato-->
+    <footer>
+        <img src="img/iconInstagram.png" alt="Logotipo da rede social Instagram" class="logotipo" />
+        <a href="https://www.instagram.com/victorh_vechi/" class="link-instagram">Victor Vechi</a>
+    </footer>
+</body>
+</html>
