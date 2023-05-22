@@ -1,4 +1,4 @@
-@media screen and (min-width:375px) and (max-width:425px) {
+@media screen and (min-width:375px) and (max-width:767px) {
     /* Redefino alguns tamanhos para se adequar a tela de celulares */
 
     header{
@@ -10,12 +10,12 @@
     }
     
     nav {
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .item-navegacao {
-        margin-right: 10px;
         font-size: 13pt;
+        margin: 5px;
     }
     
     section {
@@ -38,9 +38,10 @@
     }
 }
 
-@media screen and (max-width:768px) and (max-height:1024px) {
+@media screen and (max-width:768px){
     /* Redefino o tamanho do formulário para se adequar ao tablet */
     form {
         transform: scale(1.2);
     }
 }
+
